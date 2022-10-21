@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/ee315df075.js" crossorigin="anonymous"></script>
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <header id="header">
+            <p>Tic Tac Toe</p> 
+        </header> 
+        <main id="main-container">
+            <section id="startGame">
+                <div id="start-container">                             
+                    <div id="selectTheme">
+                        <p>Choose a theme</p>
+                        <button id="normalTheme" class="theme">Normal</button>
+                        <button id="characterTheme" class="theme">Character</button> 
+                        <button id="continueBtn" class="btn">Continue</button>
+                    </div>
+                    <div id="pickChar">
+                        <div id="char-container">
+                            <p>Choose Player 1</p>
+                            <button id="btnO" class="charBtn"></button>
+                            <button id="btnX" class="charBtn"></button>
+                        </div>  
+                        <button id="startBtn" class="btn">Start Game</button>
+                    </div>
+                    <p id="message"></p>
+                </div>
+            </section>       
+            <section id="board">
+                <div id="status-container">
+                    <div id="icon"></div>
+                    <h3 id="gameStatus"></h3>
+                </div>
+                <div id="board-container">
+                    <div id="0" class="row">
+                        <div data-index="0" class="col border"></div>
+                        <div data-index="1" class="col border"></div>
+                        <div data-index="2" class="col border"></div>
+                    </div>
+                    <div id="1" class="row">
+                        <div data-index="0" class="col border"></div>
+                        <div data-index="1" class="col border"></div>
+                        <div data-index="2" class="col border"></div>
+                    </div>
+                    <div id="2" class="row">
+                        <div data-index="0" class="col border"></div>
+                        <div data-index="1" class="col border"></div>
+                        <div data-index="2" class="col border"></div>
+                    </div>
+                </div>     
+                <div id="gameBtn">
+                    <button id="prev" class="game-btn"><i class="fa-solid fa-backward-step"></i> Previous</button>
+                    <button id="restart" class="game-btn"><i class="fa-solid fa-rotate-right"></i> Restart</button>
+                    <button id="next" class="game-btn">Next <i class="fa-solid fa-forward-step"></i> </button>
+                </div>   
+                 
+            </section>
+        </main>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

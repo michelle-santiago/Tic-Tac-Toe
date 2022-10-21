@@ -1,0 +1,371 @@
+html{
+    box-sizing:border-box; 
+    overflow-wrap: break-word;
+}
+*, *::before, *::after{ 
+    box-sizing: inherit;
+}
+body{
+    margin: 0;/*Reset*/
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #6daca4;
+    color: #ffffff;
+}
+p{
+   margin-top: 20px;
+}
+/*Header*/
+#header{
+    height: 10%;
+    font-size: 225%;
+    display: flex;
+    justify-content: center;
+}
+/*Main*/
+#main-container{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.bg{
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Theme*/
+#start-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    text-align: center;
+}
+#selectTheme{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+   
+}
+/*Select Theme Buttons*/
+.theme{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    border:1px solid #ffffff;
+    color: #ffffff;;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+}
+.theme:hover{
+    background-color: #ffbaa4;
+    border:1px solid #ffbaa4;
+    /*color: #000000;*/
+}
+.selected{
+    cursor: pointer;
+    background-color: #db6e6e;
+    color: white;
+    border-radius: 10px;
+    border:1px solid #db6e6e;
+    width: 200px;
+    padding: 5px;
+}
+.selected:hover{
+    background-color: #ffbaa4;
+    border:1px solid #ffbaa4;
+    /*color: #000000;*/
+}
+#pickChar{
+    display:none;
+}
+#char-container{
+    padding-bottom: 10px;
+
+}
+/*Pick Character Buttons*/
+.charBtn{
+    cursor: pointer;
+    background-color: #87cfcf;
+    border-radius: 10px;
+    border:1px solid #87cfcf;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    padding: 5px;
+}
+.charBtn:hover{
+    background-color: #ffbaa4;
+    border:1px solid #ffbaa4;
+}
+
+#btnX{
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid #87cfcf;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+#btnO{
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid #87cfcf;
+    width: 100px;
+    height: 100px;
+}
+
+#board{
+    height: 90%;
+    display: none;
+}
+.btn{
+    cursor: pointer;
+    background-color: #157d88;
+    color: #ffffff;
+    border:1px solid #157d88;  
+    width: 200px;
+    padding: 5px;
+}
+.btn:hover{
+    background-color: #000000;
+    color: #157d88;
+}
+/*Board*/
+#board-container{
+    cursor: pointer;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.disable{
+    pointer-events: none;
+}
+#status-container{
+    height: 15%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#gameBtn{
+    height: 15%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+.game-btn{
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border:1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+.game-btn:hover{
+    background-color: #157d88;
+    border:1px solid  #157d88;
+    color: #ffffff;
+}
+.disableBtn{
+    cursor:unset;
+    pointer-events: none;
+    color:#968b8b;
+}
+.disableBtn:hover{
+    background-color: #ffffff;
+    border:1px solid  #ffffff;
+    color:#968b8b;
+}
+.enable{
+    pointer-events: all;
+}
+
+#icon{
+    width: 70px;
+    height: 70px;
+}
+#gameStatus{
+    font-size: 30px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px;
+}
+.border{
+    border: 3px solid rgb(255, 255, 255);
+}
+.noTop{
+    border-top: none;
+}
+.noBottom{
+    border-bottom: none;
+}
+.noLeft{
+    border-left: none;
+}
+.noRight{
+    border-right: none;
+
+}
+/*prev, next, restart*/
+#prev{
+    display: none;
+}
+#next{
+    display: none;  
+}
+/*For previous animation*/
+.poof{
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: poof1 2s;
+}
+@keyframes poof1 {
+    0%   {background-image: url("/assets/img/poof.gif");}
+    100% {background-image: none;}
+}
+/*Character and symbol for game status and picking */
+.normalX-img{
+    background-image: url("/assets/img/x-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.normalO-img{
+    background-image: url("/assets/img/o-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.characterX-img{
+    background-image: url("/assets/img/calcifer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.characterO-img{
+    background-image: url("/assets/img/noface.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/*When clicking with animation*/
+.characterO{
+    background-image: url("/assets/img/noface.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:poof2 2s;
+}
+@keyframes poof2 {
+    0%   {background-image: url("/assets/img/poof.gif");}
+    100% {background-image: url("/assets/img/noface.png");}
+}
+.characterX{
+    background-image: url("/assets/img/calcifer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: poof3 2s;
+}
+@keyframes poof3 {
+    0%   {background-image: url("/assets/img/poof.gif");}
+    100% {background-image: url("/assets/img/calcifer.png");}
+}
+.characterXwin{
+    background-image: url("/assets/img/calciferWin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: xWin 1s 3;   
+}
+@keyframes xWin {
+    0%   {background-image:  url("/assets/img/calciferWin.png");}
+    50%  {background-image: none;}
+    100% {background-image: url("/assets/img/calciferWin.png");}
+}
+.characterOwin{
+    background-image: url("/assets/img/nofaceWin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: oWin 1s 3;    
+}
+@keyframes oWin {
+    0%   {background-image:  url("/assets/img/nofaceWin.png");}
+    50%  {background-image: none;}
+    100% {background-image: url("/assets/img/nofaceWin.png");}
+}
+.normalO{
+    background-image: url("/assets/img/o-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.normalX{
+    background-image: url("/assets/img/x-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.normalXwin{
+    background-image: url("/assets/img/x-win.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: nXwin 1s 3;   
+}
+@keyframes nXwin {
+    0%   {background-image:  url("/assets/img/x-win.png");}
+    50%  {background-image: none;}
+    100% {background-image: url("/assets/img/x-win.png");}
+}
+.normalOwin{
+    background-image: url("/assets/img/o-win.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: nOwin 1s 3;    
+}
+@keyframes nOwin {
+    0%   {background-image:  url("/assets/img/o-win.png");}
+    50%  {background-image: none;}
+    100% {background-image: url("/assets/img/o-win.png");}
+}
+/*For next- Winner character and symbol without animation*/
+.normalX-w{
+    background-image: url("/assets/img/x-win.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.normalO-w{
+    background-image: url("/assets/img/o-win.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.characterX-w{
+    background-image: url("/assets/img/calciferWin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.characterO-w{
+    background-image: url("/assets/img/nofaceWin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
