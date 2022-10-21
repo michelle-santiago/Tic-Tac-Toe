@@ -32,7 +32,7 @@ p{
     color: white;
     width: 100%;
     height: 100%;
-    background-image: url("/assets/img/bg.png");
+    background-image: url("assets/img/bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -233,138 +233,138 @@ p{
     animation: poof1 2s;
 }
 @keyframes poof1 {
-    0%   {background-image: url("/assets/img/poof.gif");}
+    0%   {background-image: url("assets/img/poof.gif");}
     100% {background-image: none;}
 }
 /*Character and symbol for game status and picking */
 .normalX-img{
-    background-image: url("/assets/img/x-img.png");
+    background-image: url("assets/img/x-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .normalO-img{
-    background-image: url("/assets/img/o-img.png");
+    background-image: url("assets/img/o-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .characterX-img{
-    background-image: url("/assets/img/calcifer.png");
+    background-image: url("assets/img/calcifer.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .characterO-img{
-    background-image: url("/assets/img/noface.png");
+    background-image: url("assets/img/noface.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 /*When clicking with animation*/
 .characterO{
-    background-image: url("/assets/img/noface.png");
+    background-image: url("assets/img/noface.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation:poof2 2s;
 }
 @keyframes poof2 {
-    0%   {background-image: url("/assets/img/poof.gif");}
-    100% {background-image: url("/assets/img/noface.png");}
+    0%   {background-image: url("assets/img/poof.gif");}
+    100% {background-image: url("assets/img/noface.png");}
 }
 .characterX{
-    background-image: url("/assets/img/calcifer.png");
+    background-image: url("assets/img/calcifer.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: poof3 2s;
 }
 @keyframes poof3 {
-    0%   {background-image: url("/assets/img/poof.gif");}
-    100% {background-image: url("/assets/img/calcifer.png");}
+    0%   {background-image: url("assets/img/poof.gif");}
+    100% {background-image: url("assets/img/calcifer.png");}
 }
 .characterXwin{
-    background-image: url("/assets/img/calciferWin.png");
+    background-image: url("assets/img/calciferWin.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: xWin 1s 3;   
 }
 @keyframes xWin {
-    0%   {background-image:  url("/assets/img/calciferWin.png");}
+    0%   {background-image:  url("assets/img/calciferWin.png");}
     50%  {background-image: none;}
-    100% {background-image: url("/assets/img/calciferWin.png");}
+    100% {background-image: url("assets/img/calciferWin.png");}
 }
 .characterOwin{
-    background-image: url("/assets/img/nofaceWin.png");
+    background-image: url("assets/img/nofaceWin.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: oWin 1s 3;    
 }
 @keyframes oWin {
-    0%   {background-image:  url("/assets/img/nofaceWin.png");}
+    0%   {background-image:  url("assets/img/nofaceWin.png");}
     50%  {background-image: none;}
-    100% {background-image: url("/assets/img/nofaceWin.png");}
+    100% {background-image: url("assets/img/nofaceWin.png");}
 }
 .normalO{
-    background-image: url("/assets/img/o-img.png");
+    background-image: url("assets/img/o-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .normalX{
-    background-image: url("/assets/img/x-img.png");
+    background-image: url("assets/img/x-img.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .normalXwin{
-    background-image: url("/assets/img/x-win.png");
+    background-image: url("assets/img/x-win.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: nXwin 1s 3;   
 }
 @keyframes nXwin {
-    0%   {background-image:  url("/assets/img/x-win.png");}
+    0%   {background-image:  url("assets/img/x-win.png");}
     50%  {background-image: none;}
-    100% {background-image: url("/assets/img/x-win.png");}
+    100% {background-image: url("assets/img/x-win.png");}
 }
 .normalOwin{
-    background-image: url("/assets/img/o-win.png");
+    background-image: url("assets/img/o-win.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: nOwin 1s 3;    
 }
 @keyframes nOwin {
-    0%   {background-image:  url("/assets/img/o-win.png");}
+    0%   {background-image:  url("assets/img/o-win.png");}
     50%  {background-image: none;}
-    100% {background-image: url("/assets/img/o-win.png");}
+    100% {background-image: url("assets/img/o-win.png");}
 }
 /*For next- Winner character and symbol without animation*/
 .normalX-w{
-    background-image: url("/assets/img/x-win.png");
+    background-image: url("assets/img/x-win.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .normalO-w{
-    background-image: url("/assets/img/o-win.png");
+    background-image: url("assets/img/o-win.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .characterX-w{
-    background-image: url("/assets/img/calciferWin.png");
+    background-image: url("assets/img/calciferWin.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .characterO-w{
-    background-image: url("/assets/img/nofaceWin.png");
+    background-image: url("assets/img/nofaceWin.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
